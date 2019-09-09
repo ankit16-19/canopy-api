@@ -1,6 +1,6 @@
 const express = require("express");
-require("./db/mongoose");
 require('dotenv').config()
+require("./db/mongoose");
 const feeRouter = require("./routes/fee");
 const noticeRouter = require('./routes/notice')
 const notice_dataRouter = require('./routes/notice_data')

@@ -1,5 +1,5 @@
 const amqp = require('amqplib/callback_api');
-const CONN_URL = 'amqp://172.18.0.3';
+const CONN_URL = process.env.MQCONN;
 
 let channel = null;
 amqp.connect(CONN_URL, function (err, conn) {
